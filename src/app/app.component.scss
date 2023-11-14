@@ -1,0 +1,40 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  background: url('../assets/bg_images/main.png');
+  background-size: cover;
+
+  & nav {
+    width: 60%;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 10px;
+    
+    /* Disable Text Selection */
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+  }
+
+  & ul {
+    display: flex;
+
+    & li {
+      padding: 10px 20px;
+      list-style: none;
+      color: #fff;
+      cursor: pointer;
+      background: #ffffff1d;
+      transition: .3s;
+
+      &:hover {
+        background: #ffffff63;
+      }
+      &:not(:last-child) {
+        margin-right: 5px;
+      }
+    }
+  }
+}
